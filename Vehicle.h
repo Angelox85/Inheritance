@@ -13,36 +13,36 @@ using namespace std;
 
 class Vehicle
 {
-private:
-	string manufacturer;
-	int year;
-public:
-	// defaul constructor
-	Vehicle()
-	{
-		manufacturer = " ";
-		year = 0;
-	}
-	// Constructor
-	Vehicle(string vehicleManf, int vehicleYear)
-	{
-		manufacturer = vehicleManf;
-		year = vehicleYear;
+	private:
+		string manufacturer;
+		int year;
+	public:
+		// defaul constructor
+		Vehicle()
+		{
+			manufacturer = " ";
+			year = 0;
+		}
+		// Constructor
+		Vehicle(string vehicleManf, int vehicleYear)
+		{
+			manufacturer = vehicleManf;
+			year = vehicleYear;
 
-	}
+		}
 
-	// getters
-	string getManufacturer() const
-	{
-		return manufacturer;
-	}
+		// getters
+		string getManufacturer() const
+		{
+			return manufacturer;
+		}
 
-	int getYear()
-	{
-		return year;
-	}
-		// display info
-	void displayInfo();  // define in vehicle.cpp
+		int getYear()
+		{
+			return year;
+		}
+			// display info
+		void displayInfo();  // define in vehicle.cpp
 
 
 };
