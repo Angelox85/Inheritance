@@ -12,3 +12,31 @@ using namespace std;
 
 // define Car class 
 
+class Car : public Vehicle
+{
+	private:
+		int doors;
+	public:
+		// defaul constructor
+		Car() : Vehicle()
+		{
+			doors = 0;
+		}
+
+		// constructor 2
+		Car(string vehicleManf, int vehicleYear, int vehicleDoors)
+			: Vehicle(vehicleManf, vehicleYear)
+		{
+			doors = vehicleDoors;
+		}
+
+		// Accesor for door attribute
+		int getDoors()
+		{
+			return doors;
+		}
+		// display info
+		void displayInfo();  // define in car.cpp
+
+};
+#endif
