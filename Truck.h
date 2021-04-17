@@ -38,7 +38,7 @@ class Truck : public Vehicle
 		}
 
 		// display info
-		void displayInfo();  // define in truck.cpp
+		void displayInfo(); // define in truck.cpp
 
 };
 #endif
