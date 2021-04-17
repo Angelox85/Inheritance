@@ -41,7 +41,8 @@ public:
 	{
 		return year;
 	}
-
+		// display info
+	void displayInfo();  // define in vehicle.cpp
 
 
 };
